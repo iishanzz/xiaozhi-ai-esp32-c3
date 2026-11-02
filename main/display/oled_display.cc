@@ -58,8 +58,8 @@ OledDisplay::OledDisplay(esp_lcd_panel_io_handle_t panel_io, esp_lcd_panel_handl
         .monochrome = true,
         .rotation = {
             .swap_xy = false,
-            .mirror_x = mirror_x,
-            .mirror_y = mirror_y,
+            .mirror_x = true,
+            .mirror_y = true,
         },
         .flags = {
             .buff_dma = 1,
